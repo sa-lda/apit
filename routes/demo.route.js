@@ -8,6 +8,6 @@ const mens = {
   timestamp: new Date()
 };
 
-r.get('/', (req, res) => res.json(new SuccessResponseObject(JSON.stringify(mens))));
+r.get('/', (req, res) => res.json(new SuccessResponseObject(mens)));
 
 module.exports = r;
