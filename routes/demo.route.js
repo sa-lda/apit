@@ -3,6 +3,11 @@ const { SuccessResponseObject } = require('../common/http');
 
 const r = Router();
 
-r.get('/', (req, res) => res.json({sa: 92});
+const mens = {
+  message: 'Hello, world!',
+  timestamp: new Date()
+};
+
+r.get('/', (req, res) => res.json(new SuccessResponseObject(JSON.stringify(mens))));
 
 module.exports = r;
